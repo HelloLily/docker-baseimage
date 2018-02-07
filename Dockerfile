@@ -18,6 +18,7 @@ ENV PACKAGES="\
   ncurses5-libs \
   nodejs \
   libjpeg-turbo-dev \
+  git \
 "
 
 RUN echo \
