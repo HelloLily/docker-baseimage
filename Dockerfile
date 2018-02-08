@@ -19,6 +19,7 @@ ENV PACKAGES="\
   nodejs \
   libjpeg-turbo-dev \
   git \
+  openssh-client \
 "
 
 RUN echo \
