@@ -12,7 +12,7 @@ ENV PACKAGES="\
   python2 \
   python2-dev \
   py-setuptools \
-  postgresql-dev=9.6.6-r0 \
+  postgresql-dev=9.6.8-r0 \
   libxml2-dev \
   libxslt-dev \
   ncurses5-libs \
@@ -20,20 +20,19 @@ ENV PACKAGES="\
   libjpeg-turbo-dev \
   git \
   openssh-client \
+  libffi-dev \
+  libmaxminddb \
 "
 
 RUN echo \
   # Add the repository.
   && echo "http://dl-cdn.alpinelinux.org/alpine/v$ALPINE_VERSION/main/" > /etc/apk/repositories \
-
   # Install the packages (with failsafe).
   && apk add --no-cache $PACKAGES || (sed -i -e 's/dl-cdn/dl-4/g' /etc/apk/repositories && apk add --no-cache $PACKAGES) \
-
   # Make some useful symlinks that are expected to exist.
   && if [[ ! -e /usr/bin/python ]];        then ln -sf /usr/bin/python2.7 /usr/bin/python; fi \
   && if [[ ! -e /usr/bin/python-config ]]; then ln -sf /usr/bin/python2.7-config /usr/bin/python-config; fi \
   && if [[ ! -e /usr/bin/easy_install ]];  then ln -sf /usr/bin/easy_install-2.7 /usr/bin/easy_install; fi \
-
   # Install and upgrade Pip.
   && easy_install pip \
   && pip install --upgrade pip \
