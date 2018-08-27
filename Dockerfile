@@ -1,7 +1,7 @@
-FROM alpine:3.6
+FROM alpine:3.8
 LABEL maintainer=HelloLily
 
-ENV ALPINE_VERSION=3.6
+ENV ALPINE_VERSION=3.8
 
 ENV PACKAGES="\
   musl \
@@ -12,7 +12,7 @@ ENV PACKAGES="\
   python2 \
   python2-dev \
   py-setuptools \
-  postgresql-dev=9.6.9-r0 \
+  postgresql-dev=10.5-r0 \
   libxml2-dev \
   libxslt-dev \
   ncurses5-libs \
@@ -22,6 +22,7 @@ ENV PACKAGES="\
   openssh-client \
   libffi-dev \
   libmaxminddb \
+  apk-tools \
 "
 
 RUN echo \
