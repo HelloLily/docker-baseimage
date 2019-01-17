@@ -75,7 +75,7 @@ httplib2==0.10.3
 html2text==2018.1.9
 html5lib==0.999999999
 kombu==3.0.33
-lxml==4.2.5  # Old version is: 3.2.3
+lxml==4.2.5
 pyasn1==0.1.9
 pyasn1-modules==0.0.8
 rsa==3.4.2
@@ -86,8 +86,8 @@ uritemplate==3.0.0
 #######################################################
 
 certifi==2017.7.27.1
-elasticsearch==1.6.0
-elasticutils==0.10.3
+https://github.com/HelloLily/elasticsearch_old/archive/master.zip
+https://github.com/HelloLily/elasticutils_old/archive/master.zip
 
 #######################################################
 ### Testing                                         ###
@@ -173,3 +173,4 @@ drf-yasg==1.7.1
 avinit==1.2.1
 analytics-python==1.2.9
 pycountry==18.5.26
+django-cors-headers==2.4.0
