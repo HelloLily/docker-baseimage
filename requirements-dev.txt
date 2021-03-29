@@ -42,4 +42,4 @@ prompt-toolkit==1.0.7
 ptyprocess==0.5.1
 traitlets==4.3.0
 wcwidth==0.1.7
-Pygments==2.1.3
+Pygments==2.7.4
