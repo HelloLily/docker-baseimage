@@ -85,7 +85,7 @@ uritemplate==3.0.0
 ### Search                                          ###
 #######################################################
 
-certifi==2017.7.27.1
+certifi==2022.12.7
 https://github.com/HelloLily/elasticsearch_old/archive/master.zip
 https://github.com/HelloLily/elasticutils_old/archive/master.zip
 
